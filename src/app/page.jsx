@@ -1,13 +1,24 @@
 import Header from "@_components/header";
+import HeroSection from "@_components/herosection";
+import { LanguageContextProvider } from "@_context/languagecontext";
+
 
 export default function Home() {
+
   return (
 
       <>
-        <Header />
-        <main className="">
+        <LanguageContextProvider>
 
-        </main>
+          <Header />
+          <main className="">
+
+            <HeroSection />
+
+          </main>
+
+        </LanguageContextProvider>
+
       </>
 
   );

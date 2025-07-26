@@ -3,6 +3,7 @@
     "baseUrl": "./src",
     "paths": {
       "@_components/*": ["_components/*"],
+      "@_context/*": ["_context/*"]
     }
   }
 }
