@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <body
-        className={`mx-auto px-2 md:px-10`}
+        className={``}
       >
         {children}
       </body>
