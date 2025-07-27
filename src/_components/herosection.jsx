@@ -8,7 +8,7 @@ export default function HeroSection(){
             <div className="wrapper md:hidden">
 
                 <Carousel />
-                <h1 class="text-white mb-2 text-[21px] font-semibold md:text-4xl">IELTS Course by Munzereen Shahid</h1>
+                <h1 className="text-white mb-2 text-[21px] font-semibold md:text-4xl">IELTS Course by Munzereen Shahid</h1>
 
             </div>
 
