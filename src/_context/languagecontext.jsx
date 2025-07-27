@@ -1,5 +1,6 @@
 'use client';
 
+import Header from "@_components/header";
 import { createContext, useState, useContext } from "react";
 
 const LanguageContext = createContext();
@@ -25,9 +26,7 @@ export const LanguageContextProvider = ({children}) => {
                 sessionStorage.setItem("lang", lang);
             }
         }}>
-            {
-                children
-            }
+            {children}
         </LanguageContext.Provider>
     )
 

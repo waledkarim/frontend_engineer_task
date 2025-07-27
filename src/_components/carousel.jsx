@@ -1,10 +1,30 @@
-export default async function Carousel({ lang }){
+'use client';
 
-    const {  } = await fetch("https://api.10minuteschool.com/discovery-service/api/v1/products/ielts-course");
+import { useEffect, useState } from "react";
+
+export default function Carousel(){
+
+    const [media, setMedia] = useState([]);
+
+    useEffect(async () => {
+
+        try {
+            const res = await fetch("https://api.10minuteschool.com/discovery-service/api/v1/products/ielts-course");
+            const { data: { media }} = await res.json();
+            setMedia(media);
+            console.log(media);
+            
+        } catch (error) {
+            console.error(error);
+        }
+
+
+    }, []);
 
     return(
-        <div>
-
+        <div className="flex flex-col">
+            <div></div>
+            <div></div>
         </div>
     );
 }

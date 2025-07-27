@@ -8,16 +8,15 @@ export default function Home() {
   return (
 
       <>
-        <LanguageContextProvider>
+      <LanguageContextProvider>
 
           <Header />
           <main className="">
-
             <HeroSection />
-
           </main>
 
-        </LanguageContextProvider>
+      </LanguageContextProvider>
+
 
       </>
 
